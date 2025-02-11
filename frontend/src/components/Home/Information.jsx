@@ -19,7 +19,7 @@ const Information = () => {
           <div className="bg-gray-100 rounded-lg p-6 shadow-md flex flex-col md:flex-row items-center md:items-start gap-4"> {/* Card styling */}
             <img className="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover" src={image1} alt="Domain" /> {/* Improved image styling */}
             <div>
-              <h3 className="font-semibold text-lg mb-2">Enhance Your Skills</h3> {/* Added title */}
+              <h3 className="font-semibold text-lg text-center md:text-start mb-2">Enhance Your Skills</h3> {/* Added title */}
               <p className="text-center md:text-left">Build real websites selected for their educational value.</p>
             </div>
           </div>
@@ -27,21 +27,21 @@ const Information = () => {
           <div className="bg-gray-100 rounded-lg p-6 shadow-md flex flex-col md:flex-row items-center md:items-start gap-4">
             <img className="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover" src={image2} alt="Layout" />
             <div>
-              <h3 className="font-semibold text-lg mb-2">Test Your Knowledge</h3>
+              <h3 className="font-semibold text-lg text-center md:text-start mb-2">Test Your Knowledge</h3>
               <p className="text-center md:text-left">Test and improve your frontend knowledge through various challenges.</p>
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg p-6 shadow-md flex flex-col md:flex-row items-center md:items-start gap-4">
             <img className="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover" src={image3} alt="Pantone" />
             <div>
-              <h3 className="font-semibold text-lg mb-2">Save Time</h3>
+              <h3 className="font-semibold text-lg text-center md:text-start mb-2">Save Time</h3>
               <p className="text-center md:text-left">Use the provided color palettes for each project to save time.</p>
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg p-6 shadow-md flex flex-col md:flex-row items-center md:items-start gap-4">
             <img className="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover" src={image4} alt="Idea" />
             <div>
-              <h3 className="font-semibold text-lg mb-2">Find Resources</h3>
+              <h3 className="font-semibold text-lg text-center md:text-start mb-2">Find Resources</h3>
               <p className="text-center md:text-left">Find helpful, curated resources to tackle challenging elements.</p>
             </div>
           </div>
