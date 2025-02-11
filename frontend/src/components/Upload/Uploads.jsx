@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ProjectUpload = () => {
-  const [title, setTitle] = useState('');
-  const [level, setLevel] = useState('Level 1');
+  const [title, setTitle] = useState("");
+  const [level, setLevel] = useState("Level 1");
   const [image, setImage] = useState(null);
-  const [source, setSource] = useState('');
+  const [source, setSource] = useState("");
+  const [description, setDescription] = useState("");
+  const [technologies, setTechnologies] = useState("");
   const [uploadStatus, setUploadStatus] = useState(null);
 
   const handleFileChange = (e) => {
@@ -13,41 +15,48 @@ const ProjectUpload = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setUploadStatus('uploading');
+    setUploadStatus("uploading...");
 
     const formData = new FormData();
-    formData.append('title', title);
-    formData.append('level', level);
-    formData.append('image', image);
+    formData.append("title", title);
+    formData.append("level", level);
+    formData.append("image", image);
+    formData.append("source", source);
+    formData.append("description", description);
+    formData.append("technologies", technologies);
 
     try {
-      const response = await fetch('http://localhost:5000/uploads', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/upload", {
+        method: "POST",
         body: formData,
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Upload failed');
+        throw new Error("Upload failed");
       }
 
       const data = await response.json();
-      console.log('Project uploaded:', data);
-      setUploadStatus('success');
-      setTitle('');
-      setLevel('Level 1');
+      console.log("Project uploaded:", data);
+      setUploadStatus("success");
+      setTitle("");
+      setLevel("Level 1");
       setImage(null);
-
+      setSource("");
+      setDescription("");
+      setTechnologies("");
     } catch (error) {
-      console.error('Error uploading project:', error);
-      setUploadStatus('error');
+      console.error("Error uploading project:", error);
+      setUploadStatus("error");
     }
   };
-
   return (
-    <div className="container mx-auto p-8"> {/* Centered container */}
+    <div className="container mx-auto p-8">
+      {" "}
+      {/* Centered container */}
       <h2 className="text-2xl font-bold mb-4">Upload Your Project</h2>
-      <form onSubmit={handleSubmit} className="space-y-4"> {/* Space between form elements */}
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {" "}
+        {/* Space between form elements */}
         <input
           type="text"
           placeholder="Project Title"
@@ -56,7 +65,6 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
-
         <select
           value={level}
           onChange={(e) => setLevel(e.target.value)}
@@ -74,23 +82,45 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
+        {/* Add to your form */}
+        <input
+          type="text"
+          placeholder="Description of the project"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Technologies used like HTML, CSS, JavaScript"
+          value={technologies}
+          onChange={(e) => setTechnologies(e.target.value)}
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+
         <input
           type="file"
           onChange={handleFileChange}
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
-
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50"
           type="submit"
-          disabled={uploadStatus === 'uploading'}
+          disabled={uploadStatus === "uploading"}
         >
-          {uploadStatus === 'uploading' ? 'Uploading...' : 'Upload Project'}
+          {uploadStatus === "uploading" ? "Uploading..." : "Upload Project"}
         </button>
-
-        {uploadStatus === 'success' && <p className="text-green-500 mt-2">Project uploaded successfully!</p>}
-        {uploadStatus === 'error' && <p className="text-red-500 mt-2">Error uploading project. Please try again.</p>}
+        {uploadStatus === "success" && (
+          <p className="text-green-500 mt-2">Project uploaded successfully!</p>
+        )}
+        {uploadStatus === "error" && (
+          <p className="text-red-500 mt-2">
+            Error uploading project. Please try again.
+          </p>
+        )}
       </form>
     </div>
   );
