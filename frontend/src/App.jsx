@@ -15,6 +15,7 @@ import { Routes } from "react-router";
 import { Route } from "react-router";
 import Error from "./components/others/Error";
 import ProjectUpload from "./components/Upload/Uploads";
+import ProjectDetails from "./components/Projects/ProjectDetails";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route index element={<HomeMain />} />
         <Route path="/project" element={<ProjectMain />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/blog" element={<BlogMain />} />
         <Route path="/blog/first" element={<FirstBlog />} />
         <Route path="/contact" element={<ContactUsMain />} />
