@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router";
 import ProjectSearch from "./ProjectSearch";
 
 const ProjectsCards = () => {
@@ -16,6 +17,7 @@ const ProjectsCards = () => {
         const response = await fetch("http://localhost:5000/projects");
         if (!response.ok) throw new Error("Failed to fetch projects");
         const data = await response.json();
+        // console.log(data[0]._id);
         setProjects(data);
         setFilteredProjects(data);
       } catch (err) {
@@ -78,16 +80,19 @@ const ProjectsCards = () => {
                   rel="noopener noreferrer"
                 >
                   View Source
+                  
                 </a>
               </button>
             </div>
+            <NavLink to={`/project/${project._id}`}>
             {project.imageUrl && (
               <img
-                className="w-[300px] h-70 rounded"
+                className="w-[300px] h-70 rounded cursor-pointer"
                 src={project.imageUrl}
                 alt={project.title}
               />
             )}
+             </NavLink>
           </div>
         ))}
       </div>
