@@ -36,7 +36,7 @@ const ProjectUpload = () => {
       }
 
       const data = await response.json();
-      console.log("Project uploaded:", data);
+      // console.log("Project uploaded:", data);
       setUploadStatus("success");
       setTitle("");
       setLevel("Level 1");
@@ -44,6 +44,7 @@ const ProjectUpload = () => {
       setSource("");
       setDescription("");
       setTechnologies("");
+      document.getElementById("fileInput").value = "";
     } catch (error) {
       console.error("Error uploading project:", error);
       setUploadStatus("error");
@@ -99,9 +100,9 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
-
         <input
           type="file"
+          id="fileInput"
           onChange={handleFileChange}
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required

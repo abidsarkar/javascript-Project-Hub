@@ -60,11 +60,11 @@ const ProjectsCards = () => {
       <ProjectSearch onFilter={handleFilterUpdate} />
 
       {/* Project Cards */}
-      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 mb-4">
+      <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 mb-6 p-2">
         {filteredProjects.map((project) => (
           <div
             key={project._id}
-            className="border border-black shadow-md rounded-md p-4 bg-amber-300 hover:scale-105 relative"
+            className="border h-90 border-black shadow-md rounded-md p-4 bg-amber-300 hover:scale-105 relative"
           >
             <div className="absolute -top-4 -right-3 border p-0.5 bg-violet-300">
               {project.level}
@@ -83,7 +83,7 @@ const ProjectsCards = () => {
             </div>
             {project.imageUrl && (
               <img
-                className="w-[300px] h-auto rounded"
+                className="w-[300px] h-70 rounded"
                 src={project.imageUrl}
                 alt={project.title}
               />
