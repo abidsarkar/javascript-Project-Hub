@@ -34,7 +34,7 @@ const ProjectDetails = () => {
         <img
           src={project.imageUrl}
           alt={project.title}
-          className="w-full h-80 object-cover rounded-lg shadow-md"
+          className="w-full h-auto object-cover rounded-lg shadow-md"
         />
         <span className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 text-sm rounded-lg shadow-md">
           {project.level}
