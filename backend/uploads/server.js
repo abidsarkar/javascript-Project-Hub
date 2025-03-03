@@ -50,12 +50,13 @@ const projectSchema = new mongoose.Schema({
   level: { type: String, required: true, enum: ["Level 1", "Level 2", "Level 3"] },
   imageUrl: { type: String, required: true },
   source: String,
+  live_link: String,
   description: String,
   technologies: [String],
   createdAt: { type: Date, default: Date.now },
 });
 
-const Project = mongoose.model("Project", projectSchema);
+const Project = mongoose.model("js_project", projectSchema);
 
 // Upload API Route
 app.post("/upload", upload.single("image"), async (req, res) => {

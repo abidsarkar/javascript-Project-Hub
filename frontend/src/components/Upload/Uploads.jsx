@@ -5,6 +5,7 @@ const ProjectUpload = () => {
   const [level, setLevel] = useState("Level 1");
   const [image, setImage] = useState(null);
   const [source, setSource] = useState("");
+  const [liveLink, seLiveLink] = useState("");
   const [description, setDescription] = useState("");
   const [technologies, setTechnologies] = useState("");
   const [uploadStatus, setUploadStatus] = useState(null);
@@ -22,11 +23,12 @@ const ProjectUpload = () => {
     formData.append("level", level);
     formData.append("image", image);
     formData.append("source", source);
+    formData.append("liveLink", liveLink);
     formData.append("description", description);
     formData.append("technologies", technologies);
 
     try {
-      const response = await fetch("http://localhost:5000/upload", {
+      const response = await fetch(`${import.meta.env.VITE_UPLOAD_URL}`, {
         method: "POST",
         body: formData,
       });
@@ -42,6 +44,7 @@ const ProjectUpload = () => {
       setLevel("Level 1");
       setImage(null);
       setSource("");
+      seLiveLink("");
       setDescription("");
       setTechnologies("");
       document.getElementById("fileInput").value = "";
@@ -56,16 +59,16 @@ const ProjectUpload = () => {
       {/* Centered container */}
       <h2 className="text-2xl font-bold mb-4">Upload Your Project</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
-        {" "}
-        {/* Space between form elements */}
+        <p className="text-white text-xl">Project Title</p>
         <input
           type="text"
-          placeholder="Project Title"
+          placeholder="Enter your Project Title here...."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
+        <p className="text-white text-xl">Project Level</p>
         <select
           value={level}
           onChange={(e) => setLevel(e.target.value)}
@@ -75,15 +78,26 @@ const ProjectUpload = () => {
           <option value="Level 2">Level 2</option>
           <option value="Level 3">Level 3</option>
         </select>
+        <p className="text-white text-xl">Project Source</p>
         <input
           type="text"
-          placeholder="Github URL"
+          placeholder="Enter your code source Ex.(Github URL)"
           value={source}
           onChange={(e) => setSource(e.target.value)}
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
+        <p className="text-white text-xl">Project Live Demo Link</p>
+        <input
+          type="text"
+          placeholder="Enter your project live demo link"
+          value={liveLink}
+          onChange={(e) => seLiveLink(e.target.value)}
+          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          
+        />
         {/* Add to your form */}
+        <p className="text-white text-xl">Project Description</p>
         <input
           type="text"
           placeholder="Description of the project"
@@ -92,6 +106,7 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
+        <p className="text-white text-xl">Project Technologies with comma separated</p>
         <input
           type="text"
           placeholder="Technologies used like HTML, CSS, JavaScript"
@@ -100,6 +115,7 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
+        <p className="text-white text-xl">Project Image</p>
         <input
           type="file"
           id="fileInput"

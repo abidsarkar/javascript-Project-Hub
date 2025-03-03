@@ -9,7 +9,7 @@ const ProjectDetails = () => {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/projects/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_DOWNLOAD_URL}/${id}`);
         if (!response.ok) throw new Error("Project not found");
 
         const data = await response.json();

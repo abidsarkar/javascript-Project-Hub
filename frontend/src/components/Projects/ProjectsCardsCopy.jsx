@@ -13,7 +13,7 @@ const ProjectsCardsCopy = () => {
     const fetchProjects = async () => {
       setLoading(true); // Set loading to true before fetching
       try {
-        const response = await fetch("http://localhost:5000/projects"); // Replace with your API endpoint
+        const response = await fetch(`${import.meta.env.VITE_DOWNLOAD_URL}`); // Replace with your API endpoint
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(errorData.message || 'Failed to fetch projects.');
