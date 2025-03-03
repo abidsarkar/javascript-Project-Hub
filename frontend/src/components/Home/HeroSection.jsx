@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 import projectCollage from "../../assets/project-collage.webp";
 const HeroSection = () => {
   return (
@@ -19,18 +20,19 @@ const HeroSection = () => {
               The perfect type of practice for developers of all skill levels.
               Are you up for the challenge?
             </p>
-            <a
-              href="https://github.com/abidsarkar/javascript-mini-learning-project"
-              target="_blank" // Opens link in a new tab (recommended)
-              rel="noopener noreferrer" // Important for security when using target="_blank"
+
+            <NavLink
+              to="/project"
               className="btn btn-outline bg-white text-black hover:bg-black hover:text-white"
             >
               View Project
-            </a>
-            
-            <button className="ml-5 btn btn-outline text-black hover:bg-black hover:text-white">
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className="ml-5 btn btn-outline text-black hover:bg-black hover:text-white"
+            >
               Learn More
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

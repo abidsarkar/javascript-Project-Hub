@@ -16,6 +16,8 @@ import { Route } from "react-router";
 import Error from "./components/others/Error";
 import ProjectUpload from "./components/Upload/Uploads";
 import ProjectDetails from "./components/Projects/ProjectDetails";
+import SecondBlog from "./components/Blog/IndividualBlog/SecondBlog";
+import ThirdBlog from "./components/Blog/IndividualBlog/ThirdBlog";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/blog" element={<BlogMain />} />
         <Route path="/blog/first" element={<FirstBlog />} />
+        <Route path="/blog/second" element={<SecondBlog />} />
+        <Route path="/blog/third" element={<ThirdBlog />} />
         <Route path="/contact" element={<ContactUsMain />} />
         <Route path="/faq" element={<FaqMain />} />
         <Route path="/error" element={<Error />} />

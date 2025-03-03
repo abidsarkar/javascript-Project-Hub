@@ -14,7 +14,7 @@ const ProjectsCards = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:5000/projects");
+        const response = await fetch(`${import.meta.env.VITE_DOWNLOAD_URL}`);
         if (!response.ok) throw new Error("Failed to fetch projects");
         const data = await response.json();
         // console.log(data[0]._id);
