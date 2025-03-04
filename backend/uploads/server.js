@@ -13,7 +13,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -61,7 +61,7 @@ const Project = mongoose.model("js_project", projectSchema);
 // Upload API Route
 app.post("/upload", upload.single("image"), async (req, res) => {
   try {
-    const { title, level, source, description, technologies } = req.body;
+    const { title, level, source,live_link, description, technologies } = req.body;
     if (!req.file || !req.file.path) {
       return res.status(400).json({ error: "Image upload failed" });
     }
@@ -71,6 +71,7 @@ app.post("/upload", upload.single("image"), async (req, res) => {
       level,
       imageUrl: req.file.path, // Cloudinary image URL
       source,
+      live_link,
       description,
       technologies: technologies ? technologies.split(",") : [],
     });
@@ -109,3 +110,5 @@ app.get("/projects/:id", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
