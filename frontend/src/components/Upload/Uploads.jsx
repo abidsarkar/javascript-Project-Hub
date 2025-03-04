@@ -5,7 +5,7 @@ const ProjectUpload = () => {
   const [level, setLevel] = useState("Level 1");
   const [image, setImage] = useState(null);
   const [source, setSource] = useState("");
-  const [liveLink, seLiveLink] = useState("");
+  const [liveLink, setLiveLink] = useState("");
   const [description, setDescription] = useState("");
   const [technologies, setTechnologies] = useState("");
   const [uploadStatus, setUploadStatus] = useState(null);
@@ -23,7 +23,7 @@ const ProjectUpload = () => {
     formData.append("level", level);
     formData.append("image", image);
     formData.append("source", source);
-    formData.append("liveLink", liveLink);
+    formData.append("live_link", liveLink);
     formData.append("description", description);
     formData.append("technologies", technologies);
 
@@ -44,12 +44,17 @@ const ProjectUpload = () => {
       setLevel("Level 1");
       setImage(null);
       setSource("");
-      seLiveLink("");
+      setLiveLink("");
       setDescription("");
       setTechnologies("");
       document.getElementById("fileInput").value = "";
     } catch (error) {
       console.error("Error uploading project:", error);
+
+      if (error.response) {
+        console.error("Server responded with:", await error.response.text());
+      }
+
       setUploadStatus("error");
     }
   };
@@ -92,9 +97,8 @@ const ProjectUpload = () => {
           type="text"
           placeholder="Enter your project live demo link"
           value={liveLink}
-          onChange={(e) => seLiveLink(e.target.value)}
+          onChange={(e) => setLiveLink(e.target.value)}
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          
         />
         {/* Add to your form */}
         <p className="text-white text-xl">Project Description</p>
@@ -106,7 +110,9 @@ const ProjectUpload = () => {
           className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
-        <p className="text-white text-xl">Project Technologies with comma separated</p>
+        <p className="text-white text-xl">
+          Project Technologies with comma separated
+        </p>
         <input
           type="text"
           placeholder="Technologies used like HTML, CSS, JavaScript"
