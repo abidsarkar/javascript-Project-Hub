@@ -66,13 +66,14 @@ const ProjectsCards = () => {
         {filteredProjects.map((project) => (
           <div
             key={project._id}
-            className="border h-90 border-black shadow-md rounded-md p-4 bg-amber-300 hover:scale-105 relative"
+            className="border h-100 border-black shadow-md rounded-md p-4 bg-amber-300 hover:scale-105 relative"
           >
             <div className="absolute -top-4 -right-3 border p-0.5 bg-violet-300">
               {project.level}
             </div>
-            <div className="flex justify-between items-center mb-2">
-              <h2 className="text-xl font-semibold">{project.title}</h2>
+            <div className="flex justify-between flex-col items-center mb-2 gap-3">
+              <h2 className="text-xl font-semibold block">{project.title}</h2>
+              <div className="flex gap-2">
               <button className="btn btn-primary">
                 <a
                   href={project.source}
@@ -83,6 +84,18 @@ const ProjectsCards = () => {
                   
                 </a>
               </button>
+              <button className="btn btn-secondary">
+                <a
+                  href={project.live_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                  
+                </a>
+              </button>
+              </div>
+              
             </div>
             <NavLink to={`/project/${project._id}`}>
             {project.imageUrl && (
