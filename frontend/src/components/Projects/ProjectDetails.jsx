@@ -1,30 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import React from "react";
+import { useParams, Link } from "react-router";
+import data from "../../assets/Data/js_projects.json";
 
 const ProjectDetails = () => {
   const { id } = useParams();
-  const [project, setProject] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const project = data.find((proj) => proj._id.$oid === id);
 
-  useEffect(() => {
-    const fetchProject = async () => {
-      try {
-        const response = await fetch(`${import.meta.env.VITE_DOWNLOAD_URL}/${id}`);
-        if (!response.ok) throw new Error("Project not found");
-
-        const data = await response.json();
-        setProject(data);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProject();
-  }, [id]);
-
-  if (loading) return <p className="text-center text-gray-500">Loading...</p>;
   if (!project) return <p className="text-center text-red-500">Project not found.</p>;
 
   return (
@@ -68,12 +49,22 @@ const ProjectDetails = () => {
           >
             View Source Code
           </a>
-          <a
-            href="/"
+          {project.live_link && (
+            <a
+              href={project.live_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
+            >
+              Live Demo
+            </a>
+          )}
+          <Link
+            to="/"
             className="bg-gray-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-gray-600 transition"
           >
             Back to Projects
-          </a>
+          </Link>
         </div>
       </div>
     </div>

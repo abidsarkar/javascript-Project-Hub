@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ProjectSearch from "./ProjectSearch";
-
 const ProjectsCardsCopy = () => {
   const [projects, setProjects] = useState([]); // Store projects from the server
   const [filteredProjects, setFilteredProjects] = useState([]);

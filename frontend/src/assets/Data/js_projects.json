@@ -1,0 +1,574 @@
+[{
+  "_id": {
+    "$oid": "67ab72bd702007449fb8d5b1"
+  },
+  "title": "pop up",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739289277/project-hub/vnbpbnrde4k3ug2wssy8.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_1%20pop%20up",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_1%20pop%20up/",
+  "description": "this is a simple Js app that show a pop up animation after click on the submit button",
+  "technologies": [
+    "Html",
+    " css",
+    " venila js"
+  ],
+  "createdAt": {
+    "$date": "2025-02-11T15:54:37.252Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ac9d89d099ba71a44e4189"
+  },
+  "title": "To Do List",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739365769/project-hub/z7jwoxn8kcpkpsx3zf4h.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_2%20to%20do%20list",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_2%20to%20do%20list/",
+  "description": "This Is a To Do List app that store Your list in LocalStorage and .You can add new List, mark it as done, delete any list",
+  "technologies": [
+    "Html ",
+    " css ",
+    "Venila js"
+  ],
+  "createdAt": {
+    "$date": "2025-02-12T13:09:29.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67aca291d099ba71a44e41ce"
+  },
+  "title": "Calculator",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739367057/project-hub/mtwjyitsakqsdlxcznfg.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_3%20Calculator",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_3%20Calculator/",
+  "description": "Calculator app fully functional, using built in library to evaluate the option of math",
+  "technologies": [
+    "eval js library",
+    " html ",
+    "css"
+  ],
+  "createdAt": {
+    "$date": "2025-02-12T13:30:57.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67aca785d099ba71a44e41d8"
+  },
+  "title": "Quiz App",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739368325/project-hub/decsxezqfwf1tb5e43ti.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_4%20quiz%20app",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_4%20quiz%20app/",
+  "description": "Static MCQ Quiz app . User can give ans and find that if the ans is right or wrong. If Wrong it show the right ans in green background and wrong in red. after all the MCQ it show us the result. fun to play and sharp your mind.",
+  "technologies": [
+    "Local stroage ",
+    " Js",
+    " css",
+    " html"
+  ],
+  "createdAt": {
+    "$date": "2025-02-12T13:52:05.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67aca874d099ba71a44e41df"
+  },
+  "title": "Text To Voice AI",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739368563/project-hub/uanih3gngh9rfxuc581g.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_5%20Text%20to%20voice",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_5%20Text%20to%20voice/",
+  "description": "A simple web-based Text-to-Speech (TTS) converter that lets users type text and listen to it spoken aloud. This project leverages the Web Speech API for speech synthesis and allows users to select from available voices in the browser.",
+  "technologies": [
+    "Web Speech API",
+    " Html",
+    " css"
+  ],
+  "createdAt": {
+    "$date": "2025-02-12T13:56:04.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67aca9d2d099ba71a44e41f2"
+  },
+  "title": "Weather App",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739368914/project-hub/qdigcz3tiwbp3pcuiuzi.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_4%20weather%20app",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_28%20weather%20app/",
+  "description": "A simple weather app that fetches real-time weather data for any city using the OpenWeather API. Users can search for a city, and the app displays the temperature, humidity, wind speed, and an icon representing the current weather.",
+  "technologies": [
+    " OpenWeather API",
+    " HTML ",
+    "CSS ",
+    "JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-12T14:01:54.991Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0914853339aaa13cd9b0e"
+  },
+  "title": "Calendar Widget",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739624776/project-hub/jnjmfdrnfbx0x5c8xeee.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_6%20calendar%20Widget",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_6%20calendar%20Widget/",
+  "description": "A simple and customizable calendar widget for your web page.     Displays the current date, day of the week, month, and year.     Uses a clean and minimal design with a dark background and white calendar section.     Responsive layout adjusts to different screen sizes.     Easy to customize with CSS for styling preferences.",
+  "technologies": [
+    "HTML: Creates the basic structure of the calendar widget.",
+    " CSS: Styles the appearance of the calendar widget (colors",
+    " fonts",
+    " layout). ",
+    " JavaScript: Retrieves the current date information and dynamically updates the HTML content."
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:06:16.583Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b091dc53339aaa13cd9b16"
+  },
+  "title": "Digital Clock",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739624923/project-hub/iooz0rbixn1vh5ro52do.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_7%20Digital%20Clock",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_7%20Digital%20Clock/",
+  "description": "This project creates a simple digital clock with the following features:Displays hours, minutes, and seconds Toggles between 12-hour and 24-hour format Shows AM/PM indicator in 12-hour format",
+  "technologies": [
+    "index.html: Main HTML file for the clock interface digitalClockCssStyle. ",
+    "css: Stylesheet for the clock design digitalClockJavaScript. ",
+    " js: JavaScript code to update the clock and handle user interaction"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:08:44.493Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0924353339aaa13cd9b1c"
+  },
+  "title": " Drag and Drop",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625027/project-hub/pbaozesn8lkdwtp1lu8h.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_8%20Drag%20and%20Drop",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_8%20Drag%20and%20Drop/",
+  "description": "This project implements a simple drag-and-drop functionality using HTML, CSS, and JavaScript. Users can drag list items from one container to another.      Drag-and-drop functionality for list items     Uses Remixicon icons for visual appeal     Clean and responsive layout",
+  "technologies": [
+    "     HTML: Structure and content of the web page ",
+    "    CSS: Styling and layout   ",
+    "  JavaScript: Drag-and-drop functionality"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:10:27.922Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0932f53339aaa13cd9b20"
+  },
+  "title": "Dark Mood Theme app",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625263/project-hub/wlhurd5ztoqmhuugqp0u.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_9%20Dark%20Mood%20Theme",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_9%20Dark%20Mood%20Theme/",
+  "description": "toggle between light mood and dark mood theme into a single project. ",
+  "technologies": [
+    "Html ",
+    " Css ",
+    " Js "
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:14:23.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b093a653339aaa13cd9b22"
+  },
+  "title": "hide and show password",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625381/project-hub/yxxsjjxwgvr5kcqs6l0d.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_10%20hide%20and%20show%20password",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_10%20hide%20and%20show%20password/",
+  "description": "This project demonstrates how to implement a hide and show password feature using JavaScript.",
+  "technologies": [
+    "HTML ",
+    "CSS ",
+    " JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:16:22.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0945653339aaa13cd9b26"
+  },
+  "title": "Image Search Engine ",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625557/project-hub/yve8f3vfd8ks5gjqwmwo.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_11%20Image%20Search%20Engine",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_11%20Image%20Search%20Engine/",
+  "description": "An Image Search Engine that allows users to search for images using the Unsplash API. Users can view images in a grid layout and download their favorites with a simple click. Features ✨      Search for images using keywords.     Display results in a responsive grid layout.     Download high-resolution images directly.     Load more results with a \"Show More\" button.     Interactive and user-friendly UI.",
+  "technologies": [
+    "     Frontend: HTML",
+    " CSS",
+    " JavaScript  ",
+    "   API: Unsplash API    ",
+    " Icons: Font Awesome  ",
+    "   Hosting: (e.g.",
+    " Netlify",
+    " GitHub Pages)"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:19:18.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b094b453339aaa13cd9b2c"
+  },
+  "title": "Age calculator",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625651/project-hub/xh7ube39nbnrlajopnot.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_12%20age%20calculator",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_12%20age%20calculator/",
+  "description": "This project is a simple age calculator built using JavaScript. It allows users to input their birthdate and calculates their age based on the current date.",
+  "technologies": [
+    "     HTML  ",
+    "   CSS ",
+    "    JavaScript",
+    " logical meth"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:20:52.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0952253339aaa13cd9b2e"
+  },
+  "title": "Random Password Generator",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625761/project-hub/hnvimh0yycgnpwe345mj.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_13%20Random%20Password%20Generator",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_13%20Random%20Password%20Generator/",
+  "description": "A Password Generator App that help user to create Strong and random password each time. User can create 12 length Long password just a click of button also copy it easily using Copy API.Features ✨      Random Password Generate     Strong Password contain UpperCase LowerCase Number and Symbol.     Easy copy in clipboard from clicking copy button.",
+  "technologies": [
+    "     Frontend: HTML /CSS/ JavaScript  ",
+    "    API: Copy API  ",
+    "   Icons: Font Awesome   ",
+    "  Hosting: (e.g. Netlify - GitHub Pages)"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:22:42.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0955d53339aaa13cd9b30"
+  },
+  "title": "horizontal sliding",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625820/project-hub/tftagpwb0ilpogytol3w.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_14%20Horizontal%20sliding",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_14%20Horizontal%20sliding/",
+  "description": "This project demonstrates a horizontal sliding effect using JavaScript. It is a part of a series of mini learning projects aimed at enhancing JavaScript skills.",
+  "technologies": [
+    "     HTML    ",
+    " CSS   ",
+    "  JavaScript"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:23:41.075Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b095b953339aaa13cd9b34"
+  },
+  "title": "Daily Quote Project",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625913/project-hub/zjwg7nskzahfwaag2hly.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_15%20Daily%20Quote",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_15%20Daily%20Quote/",
+  "description": "This project displays a daily quote to inspire and motivate users. It fetches quotes from a public API and displays them on the web page.",
+  "technologies": [
+    "     HTML   ",
+    "  CSS ",
+    "    JavaScript",
+    "     Fetch API"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:25:13.528Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0960153339aaa13cd9b36"
+  },
+  "title": "Toast Notification Project",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739625985/project-hub/hnwhikkpsyyfwaxqrqob.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_16%20Toast%20notification",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_16%20Toast%20notification/",
+  "description": "This project demonstrates how to create a simple toast notification using JavaScript, HTML, and CSS.",
+  "technologies": [
+    "     HTML    ",
+    " CSS  ",
+    "   JavaScript",
+    " setTimeout"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:26:25.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0965353339aaa13cd9b38"
+  },
+  "title": "Note App",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626066/project-hub/o9prnzry5o2a5fsjdj7n.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_17%20Notes%20App",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_17%20Notes%20App/",
+  "description": "this project contain a notes app that store data in locally. user can create and delete notes only",
+  "technologies": [
+    "HTML",
+    " CSS ",
+    "JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:27:47.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b096c553339aaa13cd9b3a"
+  },
+  "title": "Music Player App",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626180/project-hub/momtxmworqbhindejv4q.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_19%20music%20Player%20app",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_19%20music%20Player%20app/",
+  "description": "This is a music player app that can      Play/Pause Music: Play and pause your favorite tracks with ease.     Next/Previous Track: Skip to the next or previous track in your playlist.     Shuffle: Shuffle your playlist for a random music experience.     Repeat: Repeat the current track or the entire playlist.     Volume Control: Adjust the volume to your preference.     Track Progress: View the progress of the current track.     Playlist Management: Add or remove tracks from your playlist.",
+  "technologies": [
+    "Music API: Fetches music tracks and metadata. HTML ",
+    "CSS ",
+    "JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:29:41.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0973253339aaa13cd9b3c"
+  },
+  "title": "Stopwatch APP",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626290/project-hub/ebkc14oma26psafytxce.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/Project_18%20Stopwatch",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_18%20Stopwatch/",
+  "description": "This is a simple stopwatch app where user can start the timer, stop it and start it again, reset it ",
+  "technologies": [
+    "HTML ",
+    "CSS ",
+    "JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:31:30.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0982b53339aaa13cd9b40"
+  },
+  "title": "product cart",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626538/project-hub/iztkj6iwwlnwftcdc05l.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_20%20product%20cart",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_20%20product%20cart/",
+  "description": "this is a project represent product buying cart with customize size ,color and quantity",
+  "technologies": [
+    "html",
+    "css ",
+    "js"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:35:39.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0987e53339aaa13cd9b42"
+  },
+  "title": "Email Subscription",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626622/project-hub/wb3xqlofrqyvmky8vaht.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_21%20email%20subscription%20form",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_21%20email%20subscription%20form/",
+  "description": "this project is to store and get email of user from the website to google sheet.",
+  "technologies": [
+    "GOOGLE Sheet API ",
+    " HTML",
+    " CSS",
+    " JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:37:02.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b098ce53339aaa13cd9b44"
+  },
+  "title": "custom select menu",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626702/project-hub/oheuzo3nkjlem2rosq5t.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_22%20custom%20select%20menu",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_22%20custom%20select%20menu/",
+  "description": "     Customizable select menu with various styling options.     Supports keyboard navigation.     Accessible and screen reader friendly.     Easy to integrate into any project.",
+  "technologies": [
+    "HTML",
+    " CSS ",
+    "JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:38:22.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b0991c53339aaa13cd9b46"
+  },
+  "title": "Progress Bar",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739626780/project-hub/jqeemd0q4si7r7g2ohwv.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_23%20progress%20Bar",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_23%20progress%20Bar/",
+  "description": "     Dynamic progress bar that updates in real-time.     Customizable appearance and behavior.     Lightweight and easy to integrate into any project.     Responsive design that works on all devices.",
+  "technologies": [
+    "HTML",
+    "CSS.JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:39:40.517Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b09a2953339aaa13cd9b48"
+  },
+  "title": "Background Change Effect",
+  "level": "Level 1",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739627048/project-hub/swojnuejlnn6uo64mxqn.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_24%20Bg%20Change%20Effect",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_24%20Bg%20Change%20Effect/",
+  "description": "This project demonstrates a simple background color change effect using JavaScript. The background color of the webpage changes when a button is clicked. Features      Change background color on button click     Random color generation     Simple and clean UI",
+  "technologies": [
+    "     HTML ",
+    "    CSS  ",
+    "   JavaScript"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:44:09.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b09a7853339aaa13cd9b4c"
+  },
+  "title": "from validation",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739627127/project-hub/iqovpyt4arqiz23ycjt3.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_25%20from%20validation",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_25%20from%20validation/",
+  "description": "This project demonstrates a simple form validation using JavaScript. The form includes fields for name, email, and password, and provides real-time feedback to the user. Features      Real-time validation for form fields     Custom error messages     Responsive design",
+  "technologies": [
+    "HTML",
+    " CSS",
+    " JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:45:28.390Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b09ac253339aaa13cd9b54"
+  },
+  "title": "password strength check",
+  "level": "Level 2",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739627202/project-hub/fgkjrauhg5zvw2esxiha.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_26%20password%20strength%20check",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_26%20password%20strength%20check/",
+  "description": "This project is a simple password strength checker implemented in JavaScript. It evaluates the strength of a password based on various criteria such as length, use of uppercase and lowercase letters, numbers, and special characters. Features      Real-time password strength evaluation     Visual feedback on password strength     Suggestions for improving password strength",
+  "technologies": [
+    "HTML",
+    " CSS",
+    " JS"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:46:42.515Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b09b1853339aaa13cd9b56"
+  },
+  "title": "QR Code Generator",
+  "level": "Level 3",
+  "imageUrl": "https://res.cloudinary.com/dodcuz2qa/image/upload/v1739627287/project-hub/fnccrytmfraq0xsrkmmy.png",
+  "source": "https://github.com/abidsarkar/javascript-mini-learning-project/tree/main/project_27%20QR%20code%20generator",
+  "live_link":"https://javascript-project.abidsarkar100.xyz/projects/project_27%20QR%20code%20generator/",
+  "description": "A QR Code Generator App that help user to create QR code from typing each time.Features ✨      Offline QR Code Generate",
+  "technologies": [
+    "     Frontend: HTML/ CSS/JavaScript   ",
+    "  API: QRCODE API    ",
+    " Icons: Font Awesome   ",
+    "  Hosting: (e.g. Netlify - GitHub Pages)"
+  ],
+  "createdAt": {
+    "$date": "2025-02-15T13:48:08.227Z"
+  },
+  "__v": 0
+}]
